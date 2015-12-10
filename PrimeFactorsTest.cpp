@@ -7,8 +7,7 @@ using std::vector;
 class PrimeFactorsTest : public Test {
 public:
   vector<int> list() {
-    vector<int> factors;
-    return factors;
+    return vector<int> {};
   }
   PrimeFactors primeFactors;
 };

@@ -6,8 +6,7 @@ using std::vector;
 class PrimeFactors {
 public:
   vector<int> generate(int) {
-    vector<int> factors;
-    return factors;
+    return vector<int> {};
   }
 };
 
