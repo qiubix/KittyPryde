@@ -8,7 +8,7 @@ public:
   static vector<int> generate(int n) {
     vector<int> primes;
     if ( n > 1 ) {
-      if ( n % 2 == 0) {
+      while ( n % 2 == 0) {
         primes.push_back(2);
         n /= 2;
       }

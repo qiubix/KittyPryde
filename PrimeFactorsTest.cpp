@@ -33,3 +33,7 @@ TEST_F(PrimeFactorsTest, testFour) {
 TEST_F(PrimeFactorsTest, testSix) {
   ASSERT_THAT(PrimeFactors::generate(6), Eq(list({2,3})));
 }
+
+TEST_F(PrimeFactorsTest, testEight) {
+  ASSERT_THAT(PrimeFactors::generate(8), Eq(list({2,2,2})));
+}
