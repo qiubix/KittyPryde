@@ -5,8 +5,12 @@ using std::vector;
 
 class PrimeFactors {
 public:
-  vector<int> generate(int) {
-    return vector<int> {};
+  vector<int> generate(int n) {
+    vector<int> primes;
+    if ( n > 1 ) {
+      primes.push_back(n);
+    }
+    return primes;
   }
 };
 
