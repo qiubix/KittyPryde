@@ -29,3 +29,7 @@ TEST_F(PrimeFactorsTest, testThree) {
 TEST_F(PrimeFactorsTest, testFour) {
   ASSERT_THAT(PrimeFactors::generate(4), Eq(list({2,2})));
 }
+
+TEST_F(PrimeFactorsTest, testSix) {
+  ASSERT_THAT(PrimeFactors::generate(6), Eq(list({2,3})));
+}
