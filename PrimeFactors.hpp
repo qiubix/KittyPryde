@@ -7,8 +7,8 @@ class PrimeFactors {
 public:
   static vector<int> generate(int n) {
     vector<int> primes;
+    int candidate = 2;
     if ( n > 1 ) {
-      int candidate = 2;
       while ( n % candidate == 0) {
         primes.push_back(candidate);
         n /= candidate;
