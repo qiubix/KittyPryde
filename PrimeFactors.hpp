@@ -13,9 +13,9 @@ public:
         primes.push_back(candidate);
         n /= candidate;
       }
-      if ( n > 1) {
-        primes.push_back(n);
-      }
+    }
+    if ( n > 1) {
+      primes.push_back(n);
     }
     return primes;
   }
