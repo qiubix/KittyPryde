@@ -8,9 +8,10 @@ public:
   static vector<int> generate(int n) {
     vector<int> primes;
     if ( n > 1 ) {
-      while ( n % 2 == 0) {
-        primes.push_back(2);
-        n /= 2;
+      int candidate = 2;
+      while ( n % candidate == 0) {
+        primes.push_back(candidate);
+        n /= candidate;
       }
       if ( n > 1) {
         primes.push_back(n);
