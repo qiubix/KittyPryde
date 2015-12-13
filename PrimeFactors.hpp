@@ -15,9 +15,6 @@ public:
       }
       candidate++;
     }
-    if ( n > 1) {
-      primes.push_back(n);
-    }
     return primes;
   }
 };
