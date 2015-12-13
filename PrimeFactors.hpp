@@ -9,9 +9,8 @@ public:
     vector<int> primes;
     int candidate = 2;
     while ( n > 1 ) {
-      while ( n % candidate == 0) {
+      for (; n % candidate == 0; n /= candidate) {
         primes.push_back(candidate);
-        n /= candidate;
       }
       candidate++;
     }
