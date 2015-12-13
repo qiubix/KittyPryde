@@ -7,12 +7,11 @@ class PrimeFactors {
 public:
   static vector<int> generate(int n) {
     vector<int> primes;
-    int candidate = 2;
-    while ( n > 1 ) {
+
+    for (int candidate = 2; n > 1; ++candidate) {
       for (; n % candidate == 0; n /= candidate) {
         primes.push_back(candidate);
       }
-      candidate++;
     }
     return primes;
   }
